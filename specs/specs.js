@@ -23,6 +23,14 @@ describe ('romanize', function() {
     expect(romanize(4)).to.equal("IV");
   });
 
+  it ("will return XL instead of XXXX for the number 40", function() {
+    expect(romanize(40)).to.equal("XL");
+  });
+
+  it ("will return CD instead of DDDD for the number 400", function() {
+    expect(romanize(400)).to.equal("CD");
+  });
+
 });
 
 
